@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Bold;\f1\fnil\fcharset0 HelveticaNeue;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red236\green237\blue239;\red30\green32\blue34;}
+{\*\expandedcolortbl;;\cssrgb\c94118\c94510\c94902;\cssrgb\c15686\c16863\c17647;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\sa40\partightenfactor0
+
+\f0\b\fs28 \cf0 # Reformatting of segment file (remove Mbp, spaces to tab)\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\b0\fs24 \cf0 sed -E -e 's/ Mbp//g' -e 's/ +/\\t/g' truffle_2.5k_1k_nofilt.segments >truffle_2.5k_1k_nofilt.segments.tsv\
+\pard\pardeftab560\sa40\partightenfactor0
+
+\f0\b\fs28 \cf0 \
+# Reformatting of summary file (remove leading spaces, spaces to tab)\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\b0\fs24 \cf0 sed -E -e 's/^ *//g' -e 's/ +/\\t/g' truffle_2.5k_1k_nofilt.ibd > truffle_2.5k_1k_nofilt.ibd.tsv\
+\
+\
+\pard\pardeftab560\sa40\partightenfactor0
+
+\f0\b\fs28 \cf0 # Reformatting of summary file (remove leading spaces, spaces to tab)\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\b0\fs24 \cf0 sed -E  -e '
+\f2\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 ,
+\f1\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 / +/\\t/g' 300_0.01_noContig.csv> 300_0.01_noContig.tsv}
